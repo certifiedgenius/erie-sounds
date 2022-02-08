@@ -7,8 +7,9 @@ include(ROOT_PATH . '/views/partials/header.php');
 	<table class="table table-striped">
 		<thead>
 			<th>ID</th>
-			<th>Name</th>
-			<th>Actions</th>
+			<th>Stage Name</th>
+			<th>Birth Name</th>
+			<th>Album's</th>
 		</thead>
 		<tbody>
 			<?php foreach($users as $user): ?>
@@ -17,7 +18,10 @@ include(ROOT_PATH . '/views/partials/header.php');
 						<?php echo $user->id; ?>
 					</td>
 					<td>
-						<?php echo $user->getFullName(); ?>
+						<?php echo $user->getStageName(); ?>
+					</td>
+					<td>
+						<?php echo $user->getBirthName(); ?>
 					</td>
 					<td>
 						<a href="user.php?id=<?php echo $user->id; ?>" class="btn btn-primary">View &raquo;</a>

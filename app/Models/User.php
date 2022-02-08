@@ -11,8 +11,12 @@ class User extends Model {
      *
      * @return string
      */
-    public function getFullName() {
-        return $this->first_name . ' ' . $this->last_name;
+    public function getStageName() {
+        return $this->stage_name;
+    }
+
+    public function getBirthName() {
+        return $this->irl_name;
     }
 
 }

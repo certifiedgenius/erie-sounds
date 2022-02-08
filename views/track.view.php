@@ -12,19 +12,19 @@ include(ROOT_PATH . '/views/partials/header.php');
 			<th>Songs on the album</th>
 		</thead>
 		<tbody>
-			<?php foreach($accounts as $account): ?>
+			<?php foreach($tracks as $track): ?>
 				<tr>
 					<td>
-						<?php echo $account->id; ?>
+						<?php echo $track->id; ?>
 					</td>
 					<td>
-						<?php echo $account->artist; ?>
+						<?php echo $track->title; ?>
 					</td>
 					<td>
-						<?php echo $account->album_name; ?>
+						<?php echo $track->user_id; ?>
 					</td>
 					<td>
-						<a href="account.php?id=<?php echo $account->id; ?>&user_id=<?php echo $user_id; ?>" class="btn btn-primary">View &raquo;</a>
+						<a href="account.php?id=<?php echo $track->id; ?>&user_id=<?php echo $user_id; ?>" class="btn btn-primary">View &raquo;</a>
 					</td>
 				</tr>
 			<?php endforeach; ?>
