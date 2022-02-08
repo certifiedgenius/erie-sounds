@@ -1,0 +1,14 @@
+{
+    "name": "mugeera/erie-sounds",
+    "authors": [
+        {
+            "name": "certifiedgenius",
+            "email": "mugeera.mansoor@medieinstitutet.se"
+        }
+    ],
+    "require": {
+        "illuminate/database": "^8.82",
+        "fakerphp/faker": "^1.19",
+        "nesbot/carbon": "^2.56"
+    }
+}
