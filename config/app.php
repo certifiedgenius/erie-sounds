@@ -3,7 +3,7 @@
  * App Config
  */
 
-define('APP_NAME', 'Eloquent Bank');
+define('APP_NAME', 'Erie Sounds');
 
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'bank');
