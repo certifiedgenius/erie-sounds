@@ -9,7 +9,7 @@ include(ROOT_PATH . '/views/partials/header.php');
 			<th>ID</th>
 			<th>Artist</th>
 			<th>Album</th>
-			<th>Songs on the album</th>
+			<th>Songs on the album!</th>
 		</thead>
 		<tbody>
 			<?php foreach($tracks as $track): ?>
