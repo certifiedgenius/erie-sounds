@@ -24,7 +24,7 @@ include(ROOT_PATH . '/views/partials/header.php');
 						<?php echo $account->album_name; ?>
 					</td>
 					<td>
-						<a href="account.php?id=<?php echo $account->id; ?>&user_id=<?php echo $user_id; ?>" class="btn btn-primary">View &raquo;</a>
+						<a href="track.php?id=<?php echo $account->id; ?>&user_id=<?php echo $user_id; ?>" class="btn btn-primary">View &raquo;</a>
 					</td>
 				</tr>
 			<?php endforeach; ?>

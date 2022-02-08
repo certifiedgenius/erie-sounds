@@ -7,9 +7,9 @@ include(ROOT_PATH . '/views/partials/header.php');
 	<table class="table table-striped">
 		<thead>
 			<th>ID</th>
-			<th>Artist</th>
+			<th>Title</th>
 			<th>Album</th>
-			<th>Songs on the album!</th>
+
 		</thead>
 		<tbody>
 			<?php foreach($tracks as $track): ?>
@@ -20,12 +20,15 @@ include(ROOT_PATH . '/views/partials/header.php');
 					<td>
 						<?php echo $track->title; ?>
 					</td>
+
+					<?php foreach($accounts as $account): ?>
+
 					<td>
-						<?php echo $track->user_id; ?>
+						<?php echo $account->album_name; ?>
 					</td>
-					<td>
-						<a href="account.php?id=<?php echo $track->id; ?>&user_id=<?php echo $user_id; ?>" class="btn btn-primary">View &raquo;</a>
-					</td>
+
+					<?php endforeach; ?>
+
 				</tr>
 			<?php endforeach; ?>
 		</tbody>
