@@ -6,6 +6,11 @@
             "email": "mugeera.mansoor@medieinstitutet.se"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "App\\Models\\": "app/Models"
+        }
+    },
     "require": {
         "illuminate/database": "^8.82",
         "fakerphp/faker": "^1.19",
