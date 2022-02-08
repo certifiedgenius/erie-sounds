@@ -2,7 +2,7 @@
 include(ROOT_PATH . '/views/partials/header.php');
 ?>
 
-	<h1><?php echo $user->getStageName(); ?></h1>
+	
 
 	<table class="table table-striped">
 		<thead>

@@ -16,7 +16,7 @@ $user = User::find($user_id);
 
 // get user's accounts // Albums
 $tracks = Track::where('user_id', $user_id)->get();
-$accounts = Account::where('user_id', $user_id)->get();
+$accounts = Account::where('id', $user_id)->get();
 
 // render content
 require(ROOT_PATH . '/views/track.view.php');
