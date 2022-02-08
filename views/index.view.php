@@ -2,7 +2,7 @@
 include(ROOT_PATH . '/views/partials/header.php');
 ?>
 
-	<h1>Welcomenish til ale Danski Bankski??</h1>
+	<h1>Erie Sounds</h1>
 
 	<table class="table table-striped">
 		<thead>
